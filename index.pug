@@ -1,0 +1,83 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet")
+    script(src="/build.js")
+    title HELYFLY
+  body
+    header.header 
+      h2.header-logo HELYFLY
+      p.header-contact Телефон: 
+        span 8(800)-123-12-12
+    section.hero
+      div.hero-container
+        h1.hero-text
+          | Эксклюзивная 
+          span фотосессия 
+          | при полете 
+          br 
+          | на вертолёте
+        div.price-block
+          p.price-percent %
+          p.price-text Стоимость:
+          p.price-price 1500
+        button.hold-place Забронировать место
+    section.main
+      div.row
+        div.column.column-4
+          h2.main-header Фотосессия
+            br
+            | в вертолете
+          p.main-info Полет на вертолете это прекрасная возможность 
+            | получить новые ощущения! А наш замечательный фотограф 
+            | запечатлит лучшие моменты
+          ul.main-list
+            li.main-list-element 
+              img.main-list-element-img(src="./images/clock.png")
+              p 3 часа съёмки
+            li.main-list-element
+              img.main-list-element-img(src="./images/photo.png")
+              p Более 50 фотографий
+            li.main-list-element
+              img.main-list-element-img(src="./images/map-mark.png")
+              p Москва
+            li.main-list-element
+              img.main-list-element-img(src="./images/speech-bubble.png")
+              p Готовы ответить на любые вопросы
+            li.main-list-element.main-list-element-special
+              img.main-list-element-img(src="./images/cup.png")
+              p Более 50 отзывов с оценкой
+              img.star(src="./images/star.png")
+              img.star(src="./images/star.png")
+              img.star(src="./images/star.png")
+              img.star(src="./images/star.png")
+              img.star(src="./images/star.png")
+        div.column.column-4
+          div.main-video-box(id="video")
+            iframe.br-4.hide( width="100%", height="100%", src="https://www.youtube.com/embed/XIMLoLxmTDw",
+             frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", 
+             allowfullscreen)
+            img.main-video-play(src="./images/play.png")
+      div.main-album
+        p Фотографии пакета:
+        div.row
+          img.greed-img.column.column-2(src="./images/photo-1.png")
+          img.greed-img.column.column-2(src="./images/photo-2.png")
+          img.greed-img.column.column-2(src="./images/photo-3.png")
+          img.greed-img.column.column-2(src="./images/preview.png")
+        div.row
+          img.greed-img.column.column-2(src="./images/photo-1.png")
+          img.greed-img.column.column-2(src="./images/photo-2.png")
+          img.greed-img.column.column-2(src="./images/photo-3.png")
+          img.greed-img.column.column-2(src="./images/preview.png")
+        button.show-more показать все фото
+      div.row.main-author-info
+        div.column.column-5
+        div.column.column-3
+    section.map
+      iframe.map-ref( src="https://yandex.ru/map-widget/v1/-/CGWNVO9c",
+       frameborder="1", allowfullscreen="true")
+
+

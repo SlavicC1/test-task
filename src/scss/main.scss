@@ -1,0 +1,119 @@
+$list-element-font-size: 14px;
+$list-element-height: 40px;
+$star-size: 18px;
+$border-color: #C7C7C7;
+$main-color: #37373F;
+
+.main{
+    max-width: 1140px;
+    margin: 80px auto;
+}
+
+.main-header{
+    text-align: left;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.main-info{
+    margin-top: 18px;
+    max-width: 550px;
+    font-size: 18px;
+    line-height: 26px;
+    color: $main-color;
+}
+
+.main-list{
+    margin-top: 20px;
+}
+
+.main-list-element{
+    margin: 15px 0;
+    height: $list-element-height;
+}
+
+.main-list-element p{
+    display: inline-block;
+    font-weight: 500;
+    font-size: $list-element-font-size;
+    position: relative;
+    bottom: ( $list-element-height - $list-element-font-size) / 2;
+    margin-right: 15px;
+}
+
+.main-list-element-img{
+    display: inline-block;
+    width: $list-element-height;
+    height: $list-element-height;
+    margin-right: 10px;
+}
+
+.main-list-element-special{
+    border-top: 0.5px solid $border-color;
+    border-bottom: 0.5px solid $border-color;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.star{
+    position: relative;
+    bottom: ( $list-element-height - $star-size) / 2;
+    width: $star-size;
+    height: $star-size;
+    margin-right: 7px;
+}
+
+.main-video-box{
+    margin-left: 12px;
+    width: 555px;
+    height: 375px;
+    background-image: url("./images/preview.png"); 
+}
+
+.main-video-play{
+    width: 16px;
+    height: 24px;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+}
+
+.main-album{
+    width: 100%;
+    border-bottom: 0.5px solid $border-color;
+}
+
+.main-album > p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: $main-color;
+    padding: 30px 0; 
+}
+
+.greed-img{
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    height: 185px;
+}
+
+.greed-img+.greed-img{
+    padding-left: 10px;
+}
+
+.show-more{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #5286EC;
+}
+
+.main-author-info{
+    border-bottom: 0.5px solid $border-color;
+    padding-top: 25px;
+}

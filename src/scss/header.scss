@@ -1,0 +1,30 @@
+$header-logo-font-size: 23px;
+$header-contact-font-size: 14px;
+$hero-height: 100px;
+
+.header{
+    height: $hero-height;
+    width: 100%;
+}
+
+.header-logo{
+    margin-top: ($hero-height - $header-logo-font-size) / 2;
+    display: inline-block;
+    margin-left: 20%;
+    font-size: $header-logo-font-size;
+    font-weight: bold;
+}
+
+.header-contact{
+    position: relative;
+    top: -3px;
+    margin-top: ($hero-height - $header-contact-font-size) / 2;
+    display: inline-block;
+    margin-left: 36px;
+    color: #B3B3B3;
+    font-size: $header-contact-font-size;
+}
+
+.header-contact > span{
+    color: #37373F;
+}
